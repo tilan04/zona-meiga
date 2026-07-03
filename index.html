@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página estática de prueba para una web de rutas inspiradas en Galicia, la historia local y las leyendas.">
+  <title>Rutas Meigas | Inicio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <div class="site-header__top">
+        <a class="site-logo" href="index.html" aria-label="Ir al inicio">
+          <img src="assets/img/logo.svg" alt="">
+          <span>Rutas Meigas</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+          Menú
+        </button>
+      </div>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul id="main-menu" class="nav-list">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="tours-pontevedra.html">Pontevedra</a></li>
+          <li><a href="tours-lugo.html">Lugo</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Rutas con historia y leyenda</p>
+        <h1 class="hero__title">Descubre Galicia entre piedra, bosque y misterio</h1>
+        <p class="hero__text">Visitas cercanas para conocer rincones, relatos y caminos con alma, inspiradas en la tradición gallega y sus leyendas.</p>
+        <div class="hero__actions">
+          <a class="button" href="#rutas">Ver rutas</a>
+          <a class="button button--ghost" href="#proyecto">Conocer el proyecto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto" class="section section--light">
+      <div class="container--content flow">
+        <header class="section-heading">
+          <p class="section-heading__eyebrow">Entre historia y leyenda</p>
+          <h2 class="section-heading__title">Una forma cercana de mirar Galicia</h2>
+          <p class="section-heading__text">Este proyecto nace como una página estática de prueba para construir una base frontend clara, visual y mantenible antes de añadir una capa de backend.</p>
+        </header>
+        <p>La idea es trabajar una experiencia sencilla: páginas bien estructuradas, contenido fácil de leer, imágenes cuidadas y una estética que mezcle naturaleza, patrimonio y un toque místico.</p>
+        <p>Esta primera versión nos sirve para validar colores, tipografías, espaciados, cards, galería, header, footer y comportamiento responsive.</p>
+      </div>
+    </section>
+
+    <section id="rutas" class="section section--soft">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-heading__eyebrow">Rutas destacadas</p>
+          <h2 class="section-heading__title">Recorridos entre memoria, piedra y bruma</h2>
+          <p class="section-heading__text">Cards editoriales pensadas para presentar rutas o páginas interiores de forma visual, clara y reutilizable.</p>
+        </header>
+
+        <div class="editorial-grid">
+          <article class="editorial-card">
+            <div class="editorial-card__media"><img src="assets/img/tour-pontevedra.webp" alt="Calle histórica de Pontevedra con edificios de piedra"></div>
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Tour urbano</p>
+              <h3 class="editorial-card__title">Pontevedra</h3>
+              <p class="editorial-card__text">Un paseo por plazas, calles y relatos que conectan patrimonio, memoria local y pequeñas leyendas.</p>
+              <div class="editorial-card__actions"><a class="button" href="tours-pontevedra.html">Ver ruta</a></div>
+            </div>
+          </article>
+
+          <article class="editorial-card">
+            <div class="editorial-card__media"><img src="assets/img/tour-lugo.webp" alt="Muralla y casco histórico de Lugo"></div>
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Tour patrimonial</p>
+              <h3 class="editorial-card__title">Lugo</h3>
+              <p class="editorial-card__text">Una ruta para conocer la ciudad a través de su legado romano, sus rincones antiguos y sus historias.</p>
+              <div class="editorial-card__actions"><a class="button" href="tours-lugo.html">Ver ruta</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface">
+      <div class="container">
+        <header class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">Galería</p>
+          <h2 class="section-heading__title">Instantes entre bruma y piedra</h2>
+          <p class="section-heading__text">Un mosaico visual para probar cómo funcionarían las imágenes en una futura página de galería o en bloques destacados.</p>
+        </header>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item--large"><img src="assets/img/gallery-01.webp" alt="Bosque gallego cubierto de niebla"></figure>
+          <figure class="gallery-item gallery-item--medium"><img src="assets/img/gallery-02.webp" alt="Detalle de una calle empedrada antigua"></figure>
+          <figure class="gallery-item gallery-item--wide"><img src="assets/img/gallery-03.webp" alt="Paisaje natural de Galicia al atardecer"></figure>
+          <figure class="gallery-item gallery-item--small"><img src="assets/img/gallery-04.webp" alt="Detalle de piedra antigua cubierta de vegetación"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container--content text-center flow">
+        <header class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">Empieza la ruta</p>
+          <h2 class="section-heading__title">Una base sencilla para seguir creciendo</h2>
+          <p class="section-heading__text">Cuando esta estructura funcione bien, podremos crear el resto de páginas manteniendo una experiencia coherente.</p>
+        </header>
+        <a class="button button--ghost" href="contacto.html">Contactar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="index.html">Rutas Meigas</a>
+        <p>Rutas cercanas entre historia, piedra, bosque y leyenda.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Navegación secundaria">
+        <h2 class="site-footer__title">Explora</h2>
+        <ul>
+          <li><a href="sobre.html">Sobre el proyecto</a></li>
+          <li><a href="tours-pontevedra.html">Ruta Pontevedra</a></li>
+          <li><a href="tours-lugo.html">Ruta Lugo</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__contact">
+        <h2 class="site-footer__title">Contacto</h2>
+        <ul>
+          <li><a href="mailto:hola@example.com">hola@example.com</a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>© 2026 Rutas Meigas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
