@@ -323,6 +323,30 @@ select:focus-visible {
   border-color: var(--color-text-inverted);
 }
 
+.button--booking {
+  color: var(--color-text-inverted);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button--booking:hover {
+  color: var(--color-text-inverted);
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button--whatsapp {
+  color: var(--color-text-inverted);
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.button--whatsapp:hover {
+  color: var(--color-text-inverted);
+  background-color: #246648;
+  border-color: #246648;
+}
+
 
 /* ========================================================================== 
    7. Header
