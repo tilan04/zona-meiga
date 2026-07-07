@@ -959,5 +959,53 @@ select:focus-visible {
   }
 }
 
+.service-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+/* ========================================================================== 
+   17. Roteiros
+   ========================================================================== */
+.service-card {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.service-card__text {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.service-card__list {
+  display: grid;
+  gap: var(--space-xs);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.service-card__list li {
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-secondary);
+}
+
+@media (min-width: 48rem) {
+  .service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 
 
