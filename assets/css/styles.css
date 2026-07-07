@@ -477,8 +477,8 @@ select:focus-visible {
 }
 
 .hero--compact {
-  min-height: 24rem;
-  padding-block: var(--space-2xl);
+  min-height: auto;
+  padding-block: clamp(3rem, 8vw, 5rem);
 }
 
 .hero__content {
@@ -1068,6 +1068,16 @@ select:focus-visible {
   margin: var(--space-md) 0 0;
   color: var(--color-text-muted);
   font-size: 0.9rem;
+}
+
+.reservation-panel__actions {
+  display: grid;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.reservation-panel__actions .button {
+  width: 100%;
 }
 
 @media (min-width: 48rem) {
