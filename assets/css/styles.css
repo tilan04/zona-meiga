@@ -1520,3 +1520,72 @@ select:focus-visible {
       linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-soft) 100%);
   }
 }
+
+/* ========================================================================== 
+   Ajuste home: hero limpio sin imagen placeholder ni CTAs
+   ========================================================================== */
+
+.hero--home {
+  isolation: isolate;
+  overflow: hidden;
+  min-height: clamp(31rem, 64vh, 43rem);
+  background:
+    radial-gradient(circle at 86% 16%, rgb(169 199 223 / 32%) 0 5.25rem, transparent 5.4rem),
+    radial-gradient(circle at 10% 82%, rgb(125 90 140 / 16%) 0 8rem, transparent 8.2rem),
+    linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-soft) 52%, #225b86 100%);
+}
+
+.hero--home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(
+      31deg,
+      transparent 0%,
+      transparent 43%,
+      rgb(255 255 255 / 10%) 43%,
+      rgb(255 255 255 / 10%) 57%,
+      transparent 57%
+    );
+  pointer-events: none;
+}
+
+.hero--home::after {
+  content: "";
+  position: absolute;
+  right: clamp(1.5rem, 7vw, 7rem);
+  bottom: clamp(1.5rem, 7vw, 5rem);
+  z-index: 0;
+  width: clamp(8rem, 22vw, 18rem);
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: 50%;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.hero--home .hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 58rem;
+}
+
+.hero--home .hero__text {
+  max-width: 46rem;
+}
+
+@media (max-width: 47.99rem) {
+  .hero--home {
+    min-height: auto;
+    padding-block: var(--space-2xl);
+    background:
+      radial-gradient(circle at 88% 14%, rgb(169 199 223 / 28%) 0 4rem, transparent 4.15rem),
+      linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-soft) 100%);
+  }
+
+  .hero--home::after {
+    display: none;
+  }
+}
