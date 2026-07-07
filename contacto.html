@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Formulario de contacto de Zona Meiga Tours.">
+  <meta name="description" content="Contacto placeholder.">
   <title>Contacto | Zona Meiga Tours</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
@@ -39,59 +39,53 @@
   </header>
 
   <main id="contenido">
+
     <section class="hero hero--compact">
       <div class="container hero__content">
         <p class="hero__eyebrow">Contacto</p>
-        <h1 class="hero__title">¿Necesitas que te asesoremos?</h1>
-        <p class="hero__text">Cuéntanos qué buscas y te ayudaremos a escoger recorrido, fecha o experiencia.</p>
+        <h1 class="hero__title">Contacto</h1>
+        <p class="hero__text">Formulario placeholder para asesoramiento, reservas y solicitudes de información.</p>
       </div>
     </section>
-
     <section class="section section--surface">
-      <div class="container service-detail">
-        <div class="service-detail__content">
-          <header class="section-heading">
-            <p class="section-heading__eyebrow">Formulario de contacto</p>
-            <h2 class="section-heading__title">Escríbenos</h2>
-            <p class="section-heading__text">Formulario visual preparado para conectar con backend, notificaciones por correo o sistema de reservas.</p>
-          </header>
-
-          <form class="form-grid" data-static-form action="#" method="post">
-            <div class="form-field"><label for="name">Nombre</label><input id="name" name="name" autocomplete="name" required></div>
-            <div class="form-field"><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required></div>
-            <div class="form-field"><label for="service">Servicio de interés</label><select id="service" name="service"><option>Rías Baixas</option><option>Grupos</option><option>Población local</option><option>No lo tengo claro</option></select></div>
-            <div class="form-field"><label for="message">Mensaje</label><textarea id="message" name="message" required></textarea></div>
-            <p class="form-note">En esta versión estática el formulario no envía datos reales.</p>
-            <p class="form-message" tabindex="-1">Formulario de prueba: queda listo para conectar con backend más adelante.</p>
-            <button class="button button--booking" type="submit">Enviar consulta</button>
-          </form>
-        </div>
-
-        <aside class="service-detail__calendar">
-          <h2>Contacto directo</h2>
+      <div class="container intro-grid">
+        <div class="flow">
+          <p class="placeholder-note">Formulario estático</p>
+          <h2>¿Necesitas que te asesoremos?</h2>
+          <p class="lead">Este formulario no envía datos todavía. Está preparado para conectarse a backend, email o herramienta de reservas.</p>
           <ul class="detail-list">
-            <li class="detail-list__item"><span class="detail-list__label">Teléfono</span><span class="detail-list__value"><a href="tel:+34608271420">+34 608 27 14 20</a></span></li>
-            <li class="detail-list__item"><span class="detail-list__label">Email</span><span class="detail-list__value"><a href="mailto:zonameigatours@gmail.com">zonameigatours@gmail.com</a></span></li>
-            <li class="detail-list__item"><span class="detail-list__label">WhatsApp</span><span class="detail-list__value"><a href="https://wa.me/34608271420">Enviar mensaje</a></span></li>
+            <li class="detail-list__item"><span class="detail-list__label">Teléfono</span><span class="detail-list__value">+34 000 00 00 00</span></li>
+            <li class="detail-list__item"><span class="detail-list__label">Email</span><span class="detail-list__value">placeholder@example.com</span></li>
+            <li class="detail-list__item"><span class="detail-list__label">WhatsApp</span><span class="detail-list__value">Enlace placeholder</span></li>
           </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section section--soft">
-      <div class="container--content">
-        <div class="newsletter-box">
-          <header>
-            <p class="section-heading__eyebrow">Newsletter</p>
-            <h2>Suscríbete a novedades</h2>
-            <p>Bloque preparado para conectar una newsletter cuando exista proveedor o backend.</p>
-          </header>
-          <form class="form-grid" data-static-form action="#" method="post">
-            <div class="form-field"><label for="newsletter-email">Email</label><input id="newsletter-email" type="email" name="newsletter-email" required></div>
-            <p class="form-message" tabindex="-1">Suscripción de prueba registrada visualmente.</p>
-            <button class="button button--ghost" type="submit">Suscribirme</button>
-          </form>
         </div>
+
+        <form class="service-card form-grid" data-static-form>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" placeholder="Tu nombre">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tu@email.com">
+          </div>
+          <div class="form-field">
+            <label for="topic">Tipo de consulta</label>
+            <select id="topic" name="topic">
+              <option>Reserva</option>
+              <option>Grupo</option>
+              <option>Colaboración</option>
+              <option>Otra consulta</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Cuéntanos qué necesitas"></textarea>
+          </div>
+          <p class="form-help">Placeholder: no se enviará ningún dato.</p>
+          <button class="button button--booking" type="submit">Enviar consulta</button>
+          <p class="form-message" tabindex="-1">Formulario placeholder: aquí se conectará el envío real.</p>
+        </form>
       </div>
     </section>
 
@@ -101,7 +95,7 @@
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
         <a class="site-footer__logo" href="index.html">Zona Meiga Tours</a>
-        <p>Visitas guiadas entre historia, tradición, mar y leyenda.</p>
+        <p>Prototipo estático con contenido placeholder para validar estructura, navegación y componentes.</p>
       </div>
 
       <nav class="site-footer__nav" aria-label="Navegación secundaria">
@@ -118,15 +112,15 @@
       <div class="site-footer__contact">
         <h2 class="site-footer__title">Contacto</h2>
         <ul>
-          <li><a href="tel:+34608271420">+34 608 27 14 20</a></li>
-          <li><a href="mailto:zonameigatours@gmail.com">zonameigatours@gmail.com</a></li>
+          <li><a href="tel:+34000000000">+34 000 00 00 00</a></li>
+          <li><a href="mailto:placeholder@example.com">placeholder@example.com</a></li>
           <li><a href="contacto.html">Formulario de contacto</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container site-footer__bottom">
-      <p>© 2026 Zona Meiga Tours. Todos los derechos reservados.</p>
+      <p>© 2026 Zona Meiga Tours. Contenido provisional.</p>
     </div>
   </footer>
 </body>
