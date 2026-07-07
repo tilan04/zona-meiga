@@ -944,3 +944,20 @@ select:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* ========================================================================== 
+   16. Recomendados
+   ========================================================================== */
+.recommended-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 48rem) {
+  .recommended-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+
