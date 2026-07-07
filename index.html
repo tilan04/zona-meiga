@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Página estática de prueba para una web de rutas inspiradas en Galicia, la historia local y las leyendas.">
-  <title>Rutas Meigas | Inicio</title>
+  <meta name="description" content="Zona Meiga Tours ofrece visitas guiadas, experiencias culturales y recorridos por Galicia entre historia, tradición y leyenda.">
+  <title>Zona Meiga Tours | Galicia no solo es magia, es leyenda</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
   <header class="site-header">
     <div class="container site-header__inner">
       <div class="site-header__top">
         <a class="site-logo" href="index.html" aria-label="Ir al inicio">
           <img src="assets/img/logo.svg" alt="">
-          <span>Rutas Meigas</span>
+          <span>Zona Meiga Tours</span>
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
@@ -25,127 +27,26 @@
       <nav class="site-nav" aria-label="Navegación principal">
         <ul id="main-menu" class="nav-list">
           <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="tours-pontevedra.html">Pontevedra</a></li>
-          <li><a href="tours-lugo.html">Lugo</a></li>
+          <li><a href="servicios-rias-baixas.html">Actividades</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="contenido">
     <section class="hero">
       <div class="container hero__content">
         <p class="hero__eyebrow">Zona Meiga Tours</p>
-
-        <h1 class="hero__title">
-          Galicia no solo es magia, es leyenda
-        </h1>
-        
-        <p class="hero__text">
-          Visitas guiadas, experiencias culturales y recorridos por lugares llenos de historia,
-          tradición y misterio.
-        </p>
-        
+        <h1 class="hero__title">Galicia no solo es magia, es leyenda</h1>
+        <p class="hero__text">Visitas guiadas, experiencias culturales y recorridos por lugares llenos de historia, tradición y misterio.</p>
         <div class="hero__actions">
-          <a class="button" href="servicios-rias-baixas.html">Reservar visita guiada</a>
+          <a class="button button--booking" href="servicios-rias-baixas.html">Reservar visita guiada</a>
           <a class="button button--ghost" href="contacto.html">Te asesoramos</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="proyecto" class="section section--light">
-      <div class="container--content flow">
-        <header class="section-heading">
-          <p class="section-heading__eyebrow">Entre historia y leyenda</p>
-          <h2 class="section-heading__title">Una forma cercana de mirar Galicia</h2>
-          <p class="section-heading__text">Este proyecto nace como una página estática de prueba para construir una base frontend clara, visual y mantenible antes de añadir una capa de backend.</p>
-        </header>
-        <p>La idea es trabajar una experiencia sencilla: páginas bien estructuradas, contenido fácil de leer, imágenes cuidadas y una estética que mezcle naturaleza, patrimonio y un toque místico.</p>
-        <p>Esta primera versión nos sirve para validar colores, tipografías, espaciados, cards, galería, header, footer y comportamiento responsive.</p>
-      </div>
-    </section>
-
-    <section id="rutas" class="section section--soft">
-      <div class="container">
-        <header class="section-heading">
-          <p class="section-heading__eyebrow">Rutas destacadas</p>
-          <h2 class="section-heading__title">Recorridos entre memoria, piedra y bruma</h2>
-          <p class="section-heading__text">Cards editoriales pensadas para presentar rutas o páginas interiores de forma visual, clara y reutilizable.</p>
-        </header>
-
-        <div class="editorial-grid">
-          <article class="editorial-card">
-            <div class="editorial-card__media"><img src="assets/img/tour-pontevedra.webp" alt="Calle histórica de Pontevedra con edificios de piedra"></div>
-            <div class="editorial-card__body">
-              <p class="editorial-card__eyebrow">Tour urbano</p>
-              <h3 class="editorial-card__title">Pontevedra</h3>
-              <p class="editorial-card__text">Un paseo por plazas, calles y relatos que conectan patrimonio, memoria local y pequeñas leyendas.</p>
-              <div class="editorial-card__actions"><a class="button" href="tours-pontevedra.html">Ver ruta</a></div>
-              <a class="button button--booking" href="servicios-rias-baixas.html">Reservar visita guiada</a>
-              <a class="button button--whatsapp" href="https://wa.me/34608271420">Escribir por WhatsApp</a>
-            </div>
-          </article>
-
-          <article class="editorial-card">
-            <div class="editorial-card__media"><img src="assets/img/tour-lugo.webp" alt="Muralla y casco histórico de Lugo"></div>
-            <div class="editorial-card__body">
-              <p class="editorial-card__eyebrow">Tour patrimonial</p>
-              <h3 class="editorial-card__title">Lugo</h3>
-              <p class="editorial-card__text">Una ruta para conocer la ciudad a través de su legado romano, sus rincones antiguos y sus historias.</p>
-              <div class="editorial-card__actions"><a class="button" href="tours-lugo.html">Ver ruta</a></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--soft">
-      <div class="container">
-        <header class="section-heading section-heading--center">
-          <p class="section-heading__eyebrow">Nuestros servicios</p>
-          <h2 class="section-heading__title">Visitas para cada tipo de viajero</h2>
-        </header>
-    
-        <div class="service-grid">
-          <article class="service-card">
-            <h3 class="service-card__title">Rías Baixas</h3>
-            <p class="service-card__text">
-              Servicios y recorridos por algunos de los lugares más especiales de la zona.
-            </p>
-            <ul class="service-card__list">
-              <li>Combarro</li>
-              <li>Pontevedra</li>
-              <li>Redondela</li>
-              <li>Tui</li>
-            </ul>
-          </article>
-    
-          <article class="service-card">
-            <h3 class="service-card__title">Grupos</h3>
-            <p class="service-card__text">
-              Propuestas adaptadas para escolares, adultos y experiencias organizadas.
-            </p>
-            <ul class="service-card__list">
-              <li>Escolares</li>
-              <li>Adultos</li>
-              <li>Experiencias con cena</li>
-            </ul>
-          </article>
-    
-          <article class="service-card">
-            <h3 class="service-card__title">Población local</h3>
-            <p class="service-card__text">
-              Roteiros y experiencias pensadas también para quienes quieren redescubrir su entorno.
-            </p>
-            <ul class="service-card__list">
-              <li>Roteiros</li>
-              <li>Movida viguesa</li>
-              <li>Mondariz Balneario</li>
-            </ul>
-          </article>
         </div>
       </div>
     </section>
@@ -155,61 +56,158 @@
         <header class="section-heading">
           <p class="section-heading__eyebrow">Nuestros recomendados</p>
           <h2 class="section-heading__title">Experiencias para empezar el viaje</h2>
-          <p class="section-heading__text">
-            Dos propuestas destacadas para descubrir Galicia desde la historia,
-            el mar y las leyendas.
-          </p>
+          <p class="section-heading__text">Dos propuestas destacadas para descubrir Galicia desde el mar, la memoria y las leyendas.</p>
         </header>
-    
+
         <div class="recommended-grid">
-          <article class="editorial-card">
+          <article class="editorial-card editorial-card--featured">
             <div class="editorial-card__media">
               <img src="assets/img/combarro-meigas.webp" alt="Vista de Combarro junto al mar">
             </div>
             <div class="editorial-card__body">
               <p class="editorial-card__eyebrow">Recomendado</p>
               <h3 class="editorial-card__title">Combarro historias de meigas</h3>
-              <p class="editorial-card__text">
-                Una experiencia entre patrimonio marinero, tradición oral y relatos de misterio.
-              </p>
+              <p class="editorial-card__text">Una experiencia entre patrimonio marinero, tradición oral y relatos de misterio.</p>
               <div class="editorial-card__actions">
                 <a class="button" href="servicio-combarro-meigas.html">Ver experiencia</a>
+                <a class="button button--secondary" href="contacto.html">Consultar disponibilidad</a>
               </div>
             </div>
           </article>
-    
-          <article class="editorial-card">
+
+          <article class="editorial-card editorial-card--featured">
             <div class="editorial-card__media">
               <img src="assets/img/san-simon.webp" alt="Vista de la Isla de San Simón">
             </div>
             <div class="editorial-card__body">
               <p class="editorial-card__eyebrow">Recomendado</p>
               <h3 class="editorial-card__title">Isla de San Simón</h3>
-              <p class="editorial-card__text">
-                Un recorrido por una isla cargada de memoria, paisaje e historias singulares.
-              </p>
+              <p class="editorial-card__text">Un recorrido por una isla cargada de paisaje, memoria e historias singulares.</p>
               <div class="editorial-card__actions">
                 <a class="button" href="servicio-isla-san-simon.html">Ver experiencia</a>
+                <a class="button button--secondary" href="contacto.html">Consultar disponibilidad</a>
               </div>
             </div>
           </article>
         </div>
       </div>
     </section>
-    
+
+    <section class="section section--soft">
+      <div class="container">
+        <header class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">Opiniones</p>
+          <h2 class="section-heading__title">Opiniones de nuestros hechizados</h2>
+          <p class="section-heading__text">Bloques preparados para incorporar valoraciones reales cuando el contenido definitivo esté disponible.</p>
+        </header>
+
+        <div class="service-grid">
+          <article class="review-card">
+            <h3 class="review-card__title">Una experiencia diferente</h3>
+            <blockquote>“La visita mezcló historia, paisaje y leyenda de una forma muy cercana.”</blockquote>
+            <footer>Visitante hechizado</footer>
+          </article>
+          <article class="review-card">
+            <h3 class="review-card__title">Historia y cercanía</h3>
+            <blockquote>“Perfecta para descubrir rincones que no habríamos visto por nuestra cuenta.”</blockquote>
+            <footer>Grupo familiar</footer>
+          </article>
+          <article class="review-card">
+            <h3 class="review-card__title">Muy recomendable</h3>
+            <blockquote>“Una ruta amena, bien explicada y con mucho cariño por Galicia.”</blockquote>
+            <footer>Viajero curioso</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--surface">
       <div class="container">
         <header class="section-heading section-heading--center">
-          <p class="section-heading__eyebrow">Galería</p>
-          <h2 class="section-heading__title">Instantes entre bruma y piedra</h2>
-          <p class="section-heading__text">Un mosaico visual para probar cómo funcionarían las imágenes en una futura página de galería o en bloques destacados.</p>
+          <p class="section-heading__eyebrow">Nuestros servicios</p>
+          <h2 class="section-heading__title">Visitas para cada tipo de viajero</h2>
+          <p class="section-heading__text">Propuestas pensadas para visitantes, grupos organizados y población local que quiera redescubrir Galicia.</p>
         </header>
 
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-item--large"><img src="assets/img/gallery-01.webp" alt="Bosque gallego cubierto de niebla"></figure>
-          <figure class="gallery-item gallery-item--medium"><img src="assets/img/gallery-02.webp" alt="Detalle de una calle empedrada antigua"></figure>
-          <figure class="gallery-item gallery-item--wide"><img src="assets/img/gallery-03.webp" alt="Paisaje natural de Galicia al atardecer"></figure>
-          <figure class="gallery-item gallery-item--small"><img src="assets/img/gallery-04.webp" alt="Detalle de piedra antigua cubierta de vegetación"></figure>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3 class="service-card__title">Rías Baixas</h3>
+            <p class="service-card__text">Recorridos por algunos de los lugares más especiales de la zona.</p>
+            <ul class="service-card__list">
+              <li>Combarro historias de meigas</li>
+              <li>Isla de San Simón</li>
+              <li>Pontevedra general</li>
+              <li>Redondela misterios y leyendas</li>
+            </ul>
+            <div class="editorial-card__actions">
+              <a class="button" href="servicios-rias-baixas.html">Ver Rías Baixas</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Grupos</h3>
+            <p class="service-card__text">Experiencias adaptadas para escolares, adultos y visitas organizadas.</p>
+            <ul class="service-card__list">
+              <li>Escolares</li>
+              <li>Adultos</li>
+              <li>San Simón</li>
+              <li>Combarro + Pontevedra</li>
+            </ul>
+            <div class="editorial-card__actions">
+              <a class="button" href="servicios-grupos.html">Ver grupos</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Población local</h3>
+            <p class="service-card__text">Roteiros y propuestas para quienes quieren mirar su entorno con otros ojos.</p>
+            <ul class="service-card__list">
+              <li>La movida viguesa de los 80</li>
+              <li>Roteiros</li>
+              <li>Mondariz Balneario</li>
+              <li>Experiencias de proximidad</li>
+            </ul>
+            <div class="editorial-card__actions">
+              <a class="button" href="servicios-poblacion-local.html">Ver roteiros</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-heading__eyebrow">Blog</p>
+          <h2 class="section-heading__title">Artículos para preparar la visita</h2>
+          <p class="section-heading__text">Un espacio para publicar recomendaciones, historias, curiosidades y contenido útil para el viajero.</p>
+        </header>
+
+        <div class="blog-grid">
+          <article class="editorial-card">
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Artículo</p>
+              <h3 class="editorial-card__title">Qué ver antes de visitar Combarro</h3>
+              <p class="editorial-card__text">Ideas y contexto para disfrutar mejor de una ruta por una de las villas más singulares de Galicia.</p>
+              <div class="editorial-card__actions"><a class="button button--secondary" href="blog.html">Leer artículo</a></div>
+            </div>
+          </article>
+          <article class="editorial-card">
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Artículo</p>
+              <h3 class="editorial-card__title">Leyendas gallegas para viajeros</h3>
+              <p class="editorial-card__text">Una introducción a relatos, símbolos y tradiciones que forman parte del imaginario gallego.</p>
+              <div class="editorial-card__actions"><a class="button button--secondary" href="blog.html">Leer artículo</a></div>
+            </div>
+          </article>
+          <article class="editorial-card">
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Artículo</p>
+              <h3 class="editorial-card__title">Consejos para una visita guiada</h3>
+              <p class="editorial-card__text">Información práctica para elegir recorrido, punto de encuentro, duración y tipo de experiencia.</p>
+              <div class="editorial-card__actions"><a class="button button--secondary" href="blog.html">Leer artículo</a></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -217,43 +215,64 @@
     <section class="section section--dark">
       <div class="container--content text-center flow">
         <header class="section-heading section-heading--center">
-          <p class="section-heading__eyebrow">Empieza la ruta</p>
-          <h2 class="section-heading__title">Una base sencilla para seguir creciendo</h2>
-          <p class="section-heading__text">Cuando esta estructura funcione bien, podremos crear el resto de páginas manteniendo una experiencia coherente.</p>
+          <p class="section-heading__eyebrow">¿Necesitas que te asesoremos?</p>
+          <h2 class="section-heading__title">Te ayudamos a elegir la visita</h2>
+          <p class="section-heading__text">Cuéntanos qué tipo de experiencia buscas y te orientaremos hacia la ruta que mejor encaje contigo, tu grupo o tu viaje.</p>
         </header>
-        <a class="button button--ghost" href="contacto.html">Contactar</a>
+        <div class="hero__actions">
+          <a class="button button--ghost" href="contacto.html">Ir al formulario</a>
+          <a class="button button--whatsapp" href="https://wa.me/34608271420">Escribir por WhatsApp</a>
+        </div>
       </div>
     </section>
+
+    <section class="section section--surface">
+      <div class="container">
+        <header class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">Colaboradores</p>
+          <h2 class="section-heading__title">Un proyecto abierto a colaborar</h2>
+          <p class="section-heading__text">Espacio reservado para entidades, guías, empresas o proyectos que colaboren con Zona Meiga Tours.</p>
+        </header>
+        <div class="service-grid">
+          <article class="info-card"><h3 class="info-card__title">Colaborador 1</h3><p class="info-card__text">Información pendiente.</p></article>
+          <article class="info-card"><h3 class="info-card__title">Colaborador 2</h3><p class="info-card__text">Información pendiente.</p></article>
+          <article class="info-card"><h3 class="info-card__title">Colaborador 3</h3><p class="info-card__text">Información pendiente.</p></article>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-        <a class="site-footer__logo" href="index.html">Rutas Meigas</a>
-        <p>Rutas cercanas entre historia, piedra, bosque y leyenda.</p>
+        <a class="site-footer__logo" href="index.html">Zona Meiga Tours</a>
+        <p>Visitas guiadas entre historia, tradición, mar y leyenda.</p>
       </div>
 
       <nav class="site-footer__nav" aria-label="Navegación secundaria">
         <h2 class="site-footer__title">Explora</h2>
         <ul>
-          <li><a href="sobre.html">Sobre el proyecto</a></li>
-          <li><a href="tours-pontevedra.html">Ruta Pontevedra</a></li>
-          <li><a href="tours-lugo.html">Ruta Lugo</a></li>
-          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="servicios-rias-baixas.html">Actividades</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="galeria.html">Galería de fotos</a></li>
+          <li><a href="sobre.html">Sobre nosotros</a></li>
         </ul>
       </nav>
 
       <div class="site-footer__contact">
         <h2 class="site-footer__title">Contacto</h2>
         <ul>
-          <li><a href="mailto:hola@example.com">hola@example.com</a></li>
+          <li><a href="tel:+34608271420">+34 608 27 14 20</a></li>
+          <li><a href="mailto:zonameigatours@gmail.com">zonameigatours@gmail.com</a></li>
           <li><a href="contacto.html">Formulario de contacto</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container site-footer__bottom">
-      <p>© 2026 Rutas Meigas. Todos los derechos reservados.</p>
+      <p>© 2026 Zona Meiga Tours. Todos los derechos reservados.</p>
     </div>
   </footer>
 </body>

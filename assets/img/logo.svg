@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">Rutas Meigas</title>
-  <desc id="desc">Logo provisional con luna, bosque y escoba.</desc>
-  <rect width="64" height="64" rx="14" fill="#101c17"/>
-  <circle cx="45" cy="18" r="9" fill="#e7dcc0"/>
-  <circle cx="49" cy="15" r="9" fill="#101c17"/>
-  <path d="M12 48h40" stroke="#e7dcc0" stroke-width="3" stroke-linecap="round"/>
-  <path d="M17 48c5-12 9-18 14-25 4 7 8 13 14 25" fill="none" stroke="#dbe8df" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M20 31c8 4 16 4 24 0" stroke="#8a6f3d" stroke-width="3" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Zona Meiga Tours"><rect width="96" height="96" rx="22" fill="#10283a"/><path d="M18 62c18-28 42-30 60-10" fill="none" stroke="#a9c7df" stroke-width="7" stroke-linecap="round"/><path d="M26 56c11 8 30 9 44 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M47 19l6 15 16 1-13 10 4 16-13-9-14 9 5-16-13-10 16-1z" fill="#efe3f3"/></svg>

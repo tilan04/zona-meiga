@@ -1,5 +1,9 @@
-/* ========================================================================== 
-   1. Reset ligero
+/* ============================================================================
+   Zona Meiga Tours - estilos globales v2
+   Enfoque: Galicia, reservas, servicios y contenido escalable.
+   ============================================================================ */
+
+/* 1. Reset ligero
    ========================================================================== */
 
 *,
@@ -60,13 +64,11 @@ figure {
   scroll-margin-block: 5rem;
 }
 
-
-/* ========================================================================== 
-   2. Variables globales
+/* 2. Variables
    ========================================================================== */
 
 :root {
-  /* Colores base: Galicia / bandera / aire limpio */
+  /* Colores base: azul/blanco Galicia con neutro cálido */
   --color-bg: #f7f3ea;
   --color-surface: #ffffff;
   --color-surface-soft: #eef5f8;
@@ -76,21 +78,21 @@ figure {
   --color-text-muted: #5e6f78;
   --color-text-inverted: #ffffff;
 
-  /* Marca: azul Galicia */
+  /* Marca */
   --color-primary: #2f79b7;
   --color-primary-dark: #1e527e;
   --color-primary-soft: #d9eaf4;
 
-  /* Azul claro tipo Nantucket Breeze */
+  /* Azul claro secundario */
   --color-secondary: #a9c7df;
   --color-secondary-soft: #eaf3f8;
 
-  /* Acento meiga / legendario, usado poco */
+  /* Acento meiga / legendario, usado con moderación */
   --color-accent: #7d5a8c;
   --color-accent-dark: #533660;
   --color-accent-soft: #efe3f3;
 
-  /* Neutros cálidos */
+  /* Neutros */
   --color-stone: #d8d0c3;
   --color-border: #dce6eb;
 
@@ -139,8 +141,7 @@ figure {
   --transition-base: 220ms ease;
 }
 
-/* ========================================================================== 
-   3. Base
+/* 3. Base
    ========================================================================== */
 
 body {
@@ -156,12 +157,10 @@ main {
 
 ::selection {
   color: var(--color-text-inverted);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
 }
 
-
-/* ========================================================================== 
-   4. Tipografía
+/* 4. Tipografía
    ========================================================================== */
 
 h1,
@@ -179,7 +178,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.75rem);
 }
 
 h3 {
@@ -199,9 +198,7 @@ p {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
 }
 
-
-/* ========================================================================== 
-   5. Utilidades
+/* 5. Utilidades
    ========================================================================== */
 
 .container {
@@ -244,13 +241,28 @@ p {
   clip-path: inset(50%);
 }
 
+.skip-link {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: 1000;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-inverted);
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+  transform: translateY(-150%);
+}
 
-/* ========================================================================== 
-   6. Enlaces y botones
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* 6. Enlaces y botones
    ========================================================================== */
 
 a {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   text-underline-offset: 0.2em;
   transition:
     color var(--transition-fast),
@@ -259,7 +271,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-accent-dark);
 }
 
 a:focus-visible,
@@ -314,7 +326,7 @@ select:focus-visible {
 .button--ghost {
   color: var(--color-text-inverted);
   background-color: transparent;
-  border-color: rgb(248 243 232 / 55%);
+  border-color: rgb(255 255 255 / 55%);
 }
 
 .button--ghost:hover {
@@ -347,9 +359,17 @@ select:focus-visible {
   border-color: #246648;
 }
 
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
 
-/* ========================================================================== 
-   7. Header
+.text-center .button-row {
+  justify-content: center;
+}
+
+/* 7. Header
    ========================================================================== */
 
 .site-header {
@@ -386,7 +406,7 @@ select:focus-visible {
 }
 
 .site-logo:hover {
-  color: var(--color-accent-soft);
+  color: var(--color-secondary);
 }
 
 .site-logo img {
@@ -409,9 +429,9 @@ select:focus-visible {
 }
 
 .nav-list a {
-  color: rgb(248 243 232 / 86%);
+  color: rgb(255 255 255 / 86%);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 650;
   text-decoration: none;
 }
 
@@ -424,22 +444,19 @@ select:focus-visible {
   display: none;
   min-height: 2.5rem;
   padding: 0.5rem 0.75rem;
-  border: 1px solid rgb(248 243 232 / 24%);
+  border: 1px solid rgb(255 255 255 / 24%);
   border-radius: var(--radius-sm);
   color: var(--color-text-inverted);
   background: transparent;
   font: inherit;
   font-weight: 700;
-  cursor: pointer;
 }
 
 .nav-toggle:hover {
-  background-color: rgb(248 243 232 / 8%);
+  background-color: rgb(255 255 255 / 8%);
 }
 
-
-/* ========================================================================== 
-   8. Hero
+/* 8. Hero
    ========================================================================== */
 
 .hero {
@@ -452,11 +469,16 @@ select:focus-visible {
   background:
     linear-gradient(
       90deg,
-      rgb(16 40 58 / 88%) 0%,
+      rgb(16 40 58 / 90%) 0%,
       rgb(16 40 58 / 64%) 48%,
       rgb(16 40 58 / 24%) 100%
     ),
     url("../img/hero.webp") center / cover no-repeat;
+}
+
+.hero--compact {
+  min-height: 24rem;
+  padding-block: var(--space-2xl);
 }
 
 .hero__content {
@@ -480,6 +502,10 @@ select:focus-visible {
   font-size: clamp(3rem, 8vw, 6.25rem);
 }
 
+.hero--compact .hero__title {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
 .hero__text {
   max-width: 38rem;
   margin-top: var(--space-lg);
@@ -495,8 +521,11 @@ select:focus-visible {
   margin-top: var(--space-xl);
 }
 
-/* ========================================================================== 
-   9. Secciones
+.text-center .hero__actions {
+  justify-content: center;
+}
+
+/* 9. Secciones
    ========================================================================== */
 
 .section {
@@ -524,8 +553,8 @@ select:focus-visible {
   background:
     linear-gradient(
       135deg,
-      rgb(16 28 23 / 98%),
-      rgb(27 48 39 / 98%)
+      rgb(16 40 58 / 98%),
+      rgb(24 61 88 / 98%)
     );
 }
 
@@ -536,12 +565,13 @@ select:focus-visible {
   color: var(--color-text-inverted);
 }
 
-.section--dark p {
-  color: rgb(248 243 232 / 82%);
+.section--dark p,
+.section--dark li {
+  color: rgb(255 255 255 / 82%);
 }
 
 .section-heading {
-  max-width: 46rem;
+  max-width: 48rem;
   margin-bottom: var(--space-xl);
 }
 
@@ -554,7 +584,7 @@ select:focus-visible {
   margin: 0 0 var(--space-sm);
   color: var(--color-accent);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -573,7 +603,7 @@ select:focus-visible {
 }
 
 .section--dark .section-heading__eyebrow {
-  color: var(--color-accent-soft);
+  color: var(--color-secondary);
 }
 
 .section--dark .section-heading__title {
@@ -581,15 +611,15 @@ select:focus-visible {
 }
 
 .section--dark .section-heading__text {
-  color: rgb(248 243 232 / 78%);
+  color: rgb(255 255 255 / 78%);
 }
 
-
-/* ========================================================================== 
-   10. Cards editoriales
+/* 10. Cards editoriales
    ========================================================================== */
 
-.editorial-grid {
+.editorial-grid,
+.recommended-grid,
+.blog-grid {
   display: grid;
   gap: var(--space-lg);
 }
@@ -633,7 +663,7 @@ select:focus-visible {
   margin: 0;
   color: var(--color-accent);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -651,12 +681,243 @@ select:focus-visible {
 }
 
 .editorial-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
   margin-top: var(--space-sm);
 }
 
+/* 11. Servicios, opiniones y listados
+   ========================================================================== */
 
-/* ========================================================================== 
-   11. Galería mosaico
+.service-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.service-card,
+.review-card,
+.info-card {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card__title,
+.review-card__title,
+.info-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.service-card__text,
+.review-card__text,
+.info-card__text {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.service-card__list,
+.check-list {
+  display: grid;
+  gap: var(--space-xs);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.service-card__list li,
+.check-list li {
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-secondary);
+}
+
+.list-page {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.list-row {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.list-row__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+
+.list-row__text {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.review-card blockquote {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.review-card footer {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* 12. Detalle de servicio
+   ========================================================================== */
+
+.service-detail {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.service-detail__media img {
+  width: 100%;
+  max-height: 34rem;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-detail__content {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.service-detail__calendar {
+  padding: var(--space-lg);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-detail__calendar h2 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.6rem;
+}
+
+.calendar-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 14rem;
+  padding: var(--space-lg);
+  border: 1px dashed var(--color-secondary);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  background-color: var(--color-secondary-soft);
+  text-align: center;
+}
+
+.detail-list {
+  display: grid;
+  gap: var(--space-md);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.detail-list__item {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-md);
+  border: var(--border-soft);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+}
+
+.detail-list__label {
+  color: var(--color-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.detail-list__value {
+  color: var(--color-text-muted);
+}
+
+/* 13. Formularios
+   ========================================================================== */
+
+.form-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.form-field {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.form-field label {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+.form-field textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.form-note {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.form-message {
+  display: none;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-soft);
+}
+
+.form-message.is-visible {
+  display: block;
+}
+
+.newsletter-box {
+  display: grid;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  color: var(--color-text-inverted);
+  background-color: var(--color-primary-dark);
+}
+
+.newsletter-box h2,
+.newsletter-box p,
+.newsletter-box label {
+  color: var(--color-text-inverted);
+}
+
+/* 14. Galería y equipo
    ========================================================================== */
 
 .gallery-grid {
@@ -683,49 +944,48 @@ select:focus-visible {
   transform: scale(1.03);
 }
 
+.team-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
 
-/* ========================================================================== 
-   12. Formularios básicos
-   ========================================================================== */
-
-.form-grid {
+.team-card {
   display: grid;
   gap: var(--space-md);
-}
-
-.form-field {
-  display: grid;
-  gap: var(--space-xs);
-}
-
-.form-field label {
-  font-weight: 700;
-}
-
-.form-field input,
-.form-field textarea {
-  width: 100%;
+  padding: var(--space-lg);
   border: var(--border-soft);
-  border-radius: var(--radius-sm);
-  padding: 0.8rem 0.9rem;
-  color: var(--color-text);
+  border-radius: var(--radius-md);
   background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
 }
 
-.form-field textarea {
-  min-height: 9rem;
-  resize: vertical;
+.team-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
 }
 
+.team-card__name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+}
 
-/* ========================================================================== 
-   13. Footer
+.team-card__role,
+.team-card__text {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+/* 15. Footer
    ========================================================================== */
 
 .site-footer {
   color: var(--color-text-inverted);
   background-color: var(--color-dark);
-  border-top: 1px solid rgb(248 243 232 / 12%);
+  border-top: 1px solid rgb(255 255 255 / 14%);
 }
 
 .site-footer__inner {
@@ -750,20 +1010,20 @@ select:focus-visible {
 }
 
 .site-footer__logo:hover {
-  color: var(--color-accent-soft);
+  color: var(--color-secondary);
 }
 
 .site-footer p {
   margin: 0;
-  color: rgb(248 243 232 / 78%);
+  color: rgb(255 255 255 / 78%);
 }
 
 .site-footer__title {
   margin: 0 0 var(--space-md);
-  color: var(--color-accent-soft);
+  color: var(--color-secondary);
   font-family: var(--font-base);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -777,7 +1037,7 @@ select:focus-visible {
 }
 
 .site-footer a {
-  color: rgb(248 243 232 / 82%);
+  color: rgb(255 255 255 / 82%);
   text-decoration: none;
 }
 
@@ -789,16 +1049,14 @@ select:focus-visible {
 
 .site-footer__bottom {
   padding-block: var(--space-md);
-  border-top: 1px solid rgb(248 243 232 / 12%);
+  border-top: 1px solid rgb(255 255 255 / 14%);
 }
 
 .site-footer__bottom p {
   font-size: 0.875rem;
 }
 
-
-/* ========================================================================== 
-   14. Responsive
+/* 16. Responsive
    ========================================================================== */
 
 @media (max-width: 47.99rem) {
@@ -844,18 +1102,20 @@ select:focus-visible {
     background:
       linear-gradient(
         180deg,
-        rgb(16 28 23 / 90%) 0%,
-        rgb(16 28 23 / 72%) 100%
+        rgb(16 40 58 / 92%) 0%,
+        rgb(16 40 58 / 72%) 100%
       ),
       url("../img/hero.webp") center / cover no-repeat;
   }
 
-  .hero__actions {
+  .hero__actions,
+  .button-row {
     align-items: stretch;
     flex-direction: column;
   }
 
-  .hero__actions .button {
+  .hero__actions .button,
+  .button-row .button {
     width: 100%;
   }
 
@@ -865,7 +1125,10 @@ select:focus-visible {
 }
 
 @media (min-width: 48rem) {
-  .editorial-grid {
+  .editorial-grid,
+  .recommended-grid,
+  .blog-grid,
+  .team-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -902,9 +1165,23 @@ select:focus-visible {
     grid-template-columns: 1.5fr 1fr 1fr;
     align-items: start;
   }
+
+  .list-row {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr) auto;
+    align-items: center;
+  }
 }
 
 @media (min-width: 64rem) {
+  .service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .service-detail {
+    grid-template-columns: minmax(0, 1.2fr) minmax(22rem, 0.8fr);
+    align-items: start;
+  }
+
   .editorial-card--featured {
     grid-template-columns: 1.1fr 0.9fr;
   }
@@ -921,14 +1198,13 @@ select:focus-visible {
 }
 
 @media (min-width: 75rem) {
-  .editorial-grid--three {
+  .editorial-grid--three,
+  .blog-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-
-/* ========================================================================== 
-   15. Preferencias de accesibilidad
+/* 17. Preferencias de accesibilidad
    ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
@@ -944,155 +1220,3 @@ select:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
-
-/* ========================================================================== 
-   16. Recomendados
-   ========================================================================== */
-.recommended-grid {
-  display: grid;
-  gap: var(--space-lg);
-}
-
-@media (min-width: 48rem) {
-  .recommended-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.service-grid {
-  display: grid;
-  gap: var(--space-lg);
-}
-
-/* ========================================================================== 
-   17. Roteiros
-   ========================================================================== */
-.service-card {
-  display: grid;
-  gap: var(--space-md);
-  padding: var(--space-xl);
-  border: var(--border-soft);
-  border-radius: var(--radius-md);
-  background-color: var(--color-surface);
-  box-shadow: var(--shadow-sm);
-}
-
-.service-card__title {
-  margin: 0;
-  font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-.service-card__text {
-  margin: 0;
-  color: var(--color-text-muted);
-}
-
-.service-card__list {
-  display: grid;
-  gap: var(--space-xs);
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.service-card__list li {
-  padding-left: var(--space-md);
-  border-left: 3px solid var(--color-secondary);
-}
-
-@media (min-width: 48rem) {
-  .service-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-/* ========================================================================== 
-   18. Detalle
-   ========================================================================== */
-
-.service-detail {
-  display: grid;
-  gap: var(--space-xl);
-}
-
-.service-detail__media img {
-  width: 100%;
-  max-height: 34rem;
-  object-fit: cover;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
-
-.service-detail__content {
-  display: grid;
-  gap: var(--space-lg);
-}
-
-.service-detail__calendar {
-  padding: var(--space-lg);
-  border: var(--border-soft);
-  border-radius: var(--radius-md);
-  background-color: var(--color-surface);
-  box-shadow: var(--shadow-sm);
-}
-
-.detail-list {
-  display: grid;
-  gap: var(--space-md);
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.detail-list__item {
-  display: grid;
-  gap: var(--space-2xs);
-  padding: var(--space-md);
-  border: var(--border-soft);
-  border-radius: var(--radius-sm);
-  background-color: var(--color-surface);
-}
-
-.detail-list__label {
-  color: var(--color-primary-dark);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.detail-list__value {
-  color: var(--color-text-muted);
-}
-
-@media (min-width: 64rem) {
-  .service-detail {
-    grid-template-columns: minmax(0, 1.2fr) minmax(22rem, 0.8fr);
-    align-items: start;
-  }
-}
-
-/* ========================================================================== 
-   19. Skiplink
-   ========================================================================== */
-
-.skip-link {
-  position: absolute;
-  top: var(--space-md);
-  left: var(--space-md);
-  z-index: 1000;
-  padding: var(--space-sm) var(--space-md);
-  border-radius: var(--radius-sm);
-  color: var(--color-text-inverted);
-  background-color: var(--color-primary-dark);
-  text-decoration: none;
-  transform: translateY(-150%);
-}
-
-.skip-link:focus {
-  transform: translateY(0);
-}
-
-
-

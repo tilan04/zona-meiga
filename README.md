@@ -1,52 +1,31 @@
-# Rutas Meigas Static
+# Zona Meiga Tours - prototipo estático v2
 
-Proyecto estático de prueba para una web de rutas con estética mística, artesanal y gallega.
+Proyecto HTML/CSS/JS vanilla preparado para GitHub Pages.
 
-## Estructura
-
-```txt
-rutas-meigas-static/
-├── index.html
-├── sobre.html
-├── tours-pontevedra.html
-├── tours-lugo.html
-├── galeria.html
-├── contacto.html
-├── 404.html
-├── .nojekyll
-├── README.md
-└── assets/
-    ├── css/styles.css
-    ├── js/main.js
-    └── img/
-```
-
-## Probar en local
-
-Puedes abrir `index.html` directamente en el navegador.
-
-Para una prueba más parecida a GitHub Pages, ejecuta un servidor local desde la carpeta del proyecto:
+## Cómo probar en local
 
 ```bash
 python -m http.server 8080
 ```
 
-Después abre:
+Abrir `http://localhost:8080`.
 
-```txt
-http://localhost:8080
-```
+## Estructura principal
 
-## GitHub Pages
-
-1. Sube esta carpeta a un repositorio.
-2. Ve a `Settings > Pages`.
-3. Selecciona la rama `main` y la carpeta `/root`.
-4. Guarda los cambios.
+- `index.html`: home alineada con el nuevo mapa web.
+- `servicios.html`: entrada general a servicios.
+- `servicios-rias-baixas.html`: listado de actividades.
+- `servicios-grupos.html`: servicios para escolares y adultos.
+- `servicios-poblacion-local.html`: roteiros y población local.
+- `servicio-combarro-meigas.html`: plantilla de detalle.
+- `servicio-isla-san-simon.html`: plantilla de detalle.
+- `contacto.html`: formulario visual, WhatsApp y newsletter placeholder.
+- `assets/css/styles.css`: sistema global de estilos.
+- `assets/js/main.js`: menú móvil y comportamiento visual de formularios estáticos.
 
 ## Notas
 
-- No usa librerías externas.
-- Las imágenes son placeholders generados para prueba.
-- El formulario es estático y no envía datos reales.
-- Sustituye textos, imágenes y correo antes de publicar.
+- Sin librerías externas.
+- Imágenes placeholder generadas para evitar rutas rotas.
+- Formularios preparados para backend, no envían datos reales.
+- Calendario, pagos y reservas quedan como placeholders para una fase posterior.
