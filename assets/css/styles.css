@@ -774,6 +774,104 @@ select:focus-visible {
   font-weight: 700;
 }
 
+
+.intro-grid {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.meta-list li {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-soft);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.activity-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.activity-card {
+  display: grid;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.activity-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-0.1rem);
+}
+
+.activity-card__content {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.activity-card__eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.activity-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.1;
+}
+
+.activity-card__text {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.activity-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+@media (min-width: 48rem) {
+  .intro-grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(20rem, 0.7fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .activity-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .activity-card__actions {
+    justify-content: end;
+  }
+}
+
 /* 12. Detalle de servicio
    ========================================================================== */
 
