@@ -1073,5 +1073,26 @@ select:focus-visible {
   }
 }
 
+/* ========================================================================== 
+   19. Skiplink
+   ========================================================================== */
+
+.skip-link {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: 1000;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-inverted);
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 
 
