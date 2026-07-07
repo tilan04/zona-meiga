@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Detalle de la experiencia Combarro historias de meigas de Zona Meiga Tours.">
+  <meta
+    name="description"
+    content="Combarro historias de meigas: experiencia recomendada de Zona Meiga Tours entre patrimonio marinero, tradición oral y leyendas gallegas."
+  >
   <title>Combarro historias de meigas | Zona Meiga Tours</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
@@ -39,75 +43,290 @@
   </header>
 
   <main id="contenido">
-    <section class="hero hero--compact">
+    <section class="hero hero--compact hero--combarro">
       <div class="container hero__content">
-        <p class="hero__eyebrow">Recomendado</p>
+        <p class="hero__eyebrow">Experiencia recomendada</p>
         <h1 class="hero__title">Combarro historias de meigas</h1>
-        <p class="hero__text">Una experiencia entre patrimonio marinero, tradición oral y relatos de misterio.</p>
+        <p class="hero__text">
+          Una visita guiada entre patrimonio marinero, tradición oral y relatos de misterio
+          en uno de los lugares más singulares de las Rías Baixas.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--booking" href="#reserva">Consultar disponibilidad</a>
+          <a class="button button--ghost" href="servicios-rias-baixas.html">Volver a actividades</a>
+        </div>
       </div>
     </section>
 
     <section class="section section--surface">
       <div class="container service-detail">
-        <div class="service-detail__content">
+        <article class="service-detail__content">
           <div class="service-detail__media">
-            <img src="assets/img/combarro-meigas.webp" alt="Imagen representativa de Combarro historias de meigas">
+            <img
+              src="assets/img/combarro-meigas.webp"
+              alt="Vista representativa de Combarro junto al mar"
+            >
           </div>
 
-          <article class="flow">
-            <header class="section-heading">
-              <p class="section-heading__eyebrow">Itinerario</p>
-              <h2 class="section-heading__title">Qué encontrarás en esta experiencia</h2>
-            </header>
-            <p>Una experiencia entre patrimonio marinero, tradición oral y relatos de misterio.</p>
-            <p>Este bloque está preparado para una descripción de máximo tres párrafos, de forma que sea fácil de mantener y conectar con un futuro gestor de contenidos.</p>
-            <p>Más adelante aquí podrán añadirse paradas, horarios, recomendaciones previas y contenido específico del recorrido.</p>
-          </article>
+          <nav class="breadcrumb" aria-label="Migas de pan">
+            <ol>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios-rias-baixas.html">Actividades</a></li>
+              <li aria-current="page">Combarro historias de meigas</li>
+            </ol>
+          </nav>
 
-          <section>
-            <header class="section-heading">
-              <p class="section-heading__eyebrow">Detalles</p>
-              <h2 class="section-heading__title">Información útil</h2>
+          <section class="flow" aria-labelledby="descripcion-title">
+            <header class="section-heading section-heading--compact">
+              <p class="section-heading__eyebrow">Descripción</p>
+              <h2 id="descripcion-title" class="section-heading__title">Patrimonio, mar y leyenda</h2>
             </header>
-            <ul class="detail-list">
-              <li class="detail-list__item"><span class="detail-list__label">Duración</span><span class="detail-list__value">Pendiente de definir</span></li>
-              <li class="detail-list__item"><span class="detail-list__label">Idioma</span><span class="detail-list__value">Castellano / gallego bajo disponibilidad</span></li>
-              <li class="detail-list__item"><span class="detail-list__label">Qué incluye</span><span class="detail-list__value">Visita guiada y acompañamiento durante el recorrido</span></li>
-              <li class="detail-list__item"><span class="detail-list__label">Accesibilidad</span><span class="detail-list__value">Consultar condiciones según recorrido</span></li>
-              <li class="detail-list__item"><span class="detail-list__label">Mascotas</span><span class="detail-list__value">Consultar antes de reservar</span></li>
-              <li class="detail-list__item"><span class="detail-list__label">Cancelación</span><span class="detail-list__value">Condiciones pendientes de definir</span></li>
-              <li class="detail-list__item"><span class="detail-list__label">Punto de encuentro</span><span class="detail-list__value">Se facilitará tras confirmar disponibilidad</span></li>
+
+            <p>
+              Esta ficha está preparada para presentar la experiencia con una descripción breve,
+              clara y comercial. La estructura respeta el límite de máximo tres párrafos indicado
+              para las páginas de servicio y deja el contenido listo para sustituirse por el texto
+              definitivo del negocio.
+            </p>
+
+            <p>
+              La visita puede enfocar Combarro desde su valor patrimonial y marinero, incorporando
+              tradición oral, relatos populares y ese tono de misterio que identifica a Zona Meiga Tours.
+            </p>
+
+            <p>
+              En una fase posterior, este bloque podrá alimentarse desde backend junto con horarios,
+              disponibilidad, precios, idiomas, condiciones de cancelación y punto de encuentro.
+            </p>
+          </section>
+
+          <section aria-labelledby="itinerario-title">
+            <header class="section-heading section-heading--compact">
+              <p class="section-heading__eyebrow">Itinerario</p>
+              <h2 id="itinerario-title" class="section-heading__title">Qué encontrarás en esta experiencia</h2>
+            </header>
+
+            <ol class="timeline-list">
+              <li class="timeline-list__item">
+                <span class="timeline-list__step">01</span>
+                <div>
+                  <h3>Punto de encuentro y bienvenida</h3>
+                  <p>
+                    Inicio de la visita, presentación del recorrido y primeras claves para entender
+                    el contexto histórico y cultural de Combarro.
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline-list__item">
+                <span class="timeline-list__step">02</span>
+                <div>
+                  <h3>Recorrido por el núcleo histórico</h3>
+                  <p>
+                    Paseo por espacios representativos, con atención al patrimonio, la arquitectura
+                    popular y la relación de la villa con el mar.
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline-list__item">
+                <span class="timeline-list__step">03</span>
+                <div>
+                  <h3>Historias de meigas y tradición oral</h3>
+                  <p>
+                    Bloque narrativo dedicado a leyendas, creencias y relatos populares vinculados
+                    al imaginario gallego.
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline-list__item">
+                <span class="timeline-list__step">04</span>
+                <div>
+                  <h3>Cierre de la experiencia</h3>
+                  <p>
+                    Espacio final para resolver dudas, recomendar próximos planes y orientar hacia
+                    otros servicios relacionados.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section aria-labelledby="detalles-title">
+            <header class="section-heading section-heading--compact">
+              <p class="section-heading__eyebrow">Detalles</p>
+              <h2 id="detalles-title" class="section-heading__title">Información útil</h2>
+            </header>
+
+            <ul class="detail-list detail-list--two-columns">
+              <li class="detail-list__item">
+                <span class="detail-list__label">Duración</span>
+                <span class="detail-list__value">Pendiente de definir.</span>
+              </li>
+              <li class="detail-list__item">
+                <span class="detail-list__label">Idioma</span>
+                <span class="detail-list__value">Castellano. Gallego bajo disponibilidad.</span>
+              </li>
+              <li class="detail-list__item">
+                <span class="detail-list__label">¿Qué incluye?</span>
+                <span class="detail-list__value">Visita guiada y acompañamiento durante el recorrido.</span>
+              </li>
+              <li class="detail-list__item">
+                <span class="detail-list__label">Accesibilidad</span>
+                <span class="detail-list__value">Consultar condiciones según fecha y recorrido.</span>
+              </li>
+              <li class="detail-list__item">
+                <span class="detail-list__label">Mascotas</span>
+                <span class="detail-list__value">Consultar antes de reservar.</span>
+              </li>
+              <li class="detail-list__item">
+                <span class="detail-list__label">Cancelación</span>
+                <span class="detail-list__value">Condiciones pendientes de definir.</span>
+              </li>
+              <li class="detail-list__item detail-list__item--wide">
+                <span class="detail-list__label">Punto de encuentro</span>
+                <span class="detail-list__value">Se facilitará tras confirmar disponibilidad o reserva.</span>
+              </li>
             </ul>
           </section>
-        </div>
+        </article>
 
-        <aside class="service-detail__calendar" aria-labelledby="calendario-title">
-          <h2 id="calendario-title">Calendario y reserva</h2>
-          <p class="service-card__text">Este espacio queda preparado para conectar disponibilidad, calendario y pagos online.</p>
-          <div class="calendar-placeholder">
-            <p>Calendario placeholder<br>Disponible en una fase posterior.</p>
+        <aside id="reserva" class="service-detail__calendar reservation-panel" aria-labelledby="reserva-title">
+          <p class="reservation-panel__eyebrow">Reserva</p>
+          <h2 id="reserva-title">Calendario y disponibilidad</h2>
+          <p class="service-card__text">
+            Bloque preparado para conectar un calendario real, disponibilidad, pagos online
+            y notificaciones por correo en una fase posterior.
+          </p>
+
+          <div class="calendar-placeholder" aria-label="Calendario de disponibilidad pendiente de integración">
+            <p>
+              Calendario placeholder<br>
+              Disponible en una fase posterior.
+            </p>
           </div>
+
+          <ul class="reservation-summary" aria-label="Resumen rápido de la reserva">
+            <li><strong>Tipo:</strong> visita guiada</li>
+            <li><strong>Zona:</strong> Rías Baixas</li>
+            <li><strong>Estado:</strong> consultar disponibilidad</li>
+          </ul>
+
           <div class="editorial-card__actions">
             <a class="button button--booking" href="contacto.html">Consultar disponibilidad</a>
             <a class="button button--whatsapp" href="https://wa.me/34608271420">WhatsApp</a>
           </div>
+
+          <p class="reservation-panel__note">
+            El botón de reserva podrá enlazar más adelante con motor de reservas, pasarela de pago
+            o formulario conectado a backend.
+          </p>
         </aside>
       </div>
     </section>
 
     <section class="section section--soft">
       <div class="container">
-        <header class="section-heading">
-          <p class="section-heading__eyebrow">Productos relacionados</p>
-          <h2 class="section-heading__title">También puede interesarte</h2>
+        <header class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">Opiniones</p>
+          <h2 class="section-heading__title">Opiniones de nuestros hechizados</h2>
+          <p class="section-heading__text">
+            Espacio preparado para mostrar reseñas reales cuando estén disponibles.
+          </p>
         </header>
-        <div class="recommended-grid">
-          <article class="editorial-card"><div class="editorial-card__body"><p class="editorial-card__eyebrow">Relacionado</p><h3 class="editorial-card__title">Rías Baixas</h3><p class="editorial-card__text">Explora el resto de actividades disponibles.</p><div class="editorial-card__actions"><a class="button button--secondary" href="servicios-rias-baixas.html">Ver actividades</a></div></div></article>
-          <article class="editorial-card"><div class="editorial-card__body"><p class="editorial-card__eyebrow">Asesoramiento</p><h3 class="editorial-card__title">¿Dudas sobre la ruta?</h3><p class="editorial-card__text">Podemos ayudarte a elegir la experiencia que mejor encaje con tu viaje.</p><div class="editorial-card__actions"><a class="button button--secondary" href="contacto.html">Contactar</a></div></div></article>
+
+        <div class="service-grid">
+          <article class="review-card">
+            <h3 class="review-card__title">Una ruta con mucho encanto</h3>
+            <blockquote>
+              “Placeholder de opinión. Aquí irá una reseña breve sobre la experiencia en Combarro.”
+            </blockquote>
+            <footer>Visitante pendiente</footer>
+          </article>
+
+          <article class="review-card">
+            <h3 class="review-card__title">Historia y tradición</h3>
+            <blockquote>
+              “Placeholder de opinión. Este bloque ayudará a reforzar confianza antes de reservar.”
+            </blockquote>
+            <footer>Visitante pendiente</footer>
+          </article>
+
+          <article class="review-card">
+            <h3 class="review-card__title">Muy recomendable</h3>
+            <blockquote>
+              “Placeholder de opinión. Más adelante puede conectarse con reseñas reales.”
+            </blockquote>
+            <footer>Visitante pendiente</footer>
+          </article>
         </div>
       </div>
     </section>
 
+    <section class="section section--surface">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-heading__eyebrow">Productos relacionados</p>
+          <h2 class="section-heading__title">También puede interesarte</h2>
+          <p class="section-heading__text">
+            Otras experiencias de Rías Baixas para completar la visita.
+          </p>
+        </header>
+
+        <div class="recommended-grid">
+          <article class="editorial-card">
+            <div class="editorial-card__media">
+              <img src="assets/img/san-simon.webp" alt="Vista representativa de la Isla de San Simón">
+            </div>
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Relacionado</p>
+              <h3 class="editorial-card__title">Isla de San Simón</h3>
+              <p class="editorial-card__text">
+                Una experiencia entre paisaje, memoria e historias singulares.
+              </p>
+              <div class="editorial-card__actions">
+                <a class="button button--secondary" href="servicio-isla-san-simon.html">Ver experiencia</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="editorial-card">
+            <div class="editorial-card__media">
+              <img src="assets/img/rias-baixas.webp" alt="Paisaje representativo de las Rías Baixas">
+            </div>
+            <div class="editorial-card__body">
+              <p class="editorial-card__eyebrow">Actividades</p>
+              <h3 class="editorial-card__title">Rías Baixas</h3>
+              <p class="editorial-card__text">
+                Consulta el resto de actividades y recorridos disponibles en la zona.
+              </p>
+              <div class="editorial-card__actions">
+                <a class="button button--secondary" href="servicios-rias-baixas.html">Ver actividades</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container--content text-center flow">
+        <header class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">¿Necesitas ayuda?</p>
+          <h2 class="section-heading__title">Te asesoramos antes de reservar</h2>
+          <p class="section-heading__text">
+            Cuéntanos fecha, número de personas y tipo de experiencia que buscas.
+            Te orientaremos hacia la opción que mejor encaje.
+          </p>
+        </header>
+
+        <div class="button-row">
+          <a class="button button--ghost" href="contacto.html">Ir al formulario</a>
+          <a class="button button--whatsapp" href="https://wa.me/34608271420">Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

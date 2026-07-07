@@ -947,6 +947,145 @@ select:focus-visible {
   color: var(--color-text-muted);
 }
 
+
+/* 12.b Detalle de experiencia mejorado
+   ========================================================================== */
+
+.hero--combarro {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(16 40 58 / 92%) 0%,
+      rgb(16 40 58 / 68%) 48%,
+      rgb(16 40 58 / 28%) 100%
+    ),
+    url("../img/combarro-meigas.webp") center / cover no-repeat;
+}
+
+.section-heading--compact {
+  margin-bottom: var(--space-lg);
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin-left: var(--space-xs);
+  color: var(--color-stone);
+}
+
+.breadcrumb a {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.timeline-list {
+  display: grid;
+  gap: var(--space-md);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.timeline-list__item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-list__step {
+  display: inline-grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  color: var(--color-text-inverted);
+  background-color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.timeline-list h3 {
+  margin-bottom: var(--space-xs);
+  font-size: 1.25rem;
+}
+
+.timeline-list p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.reservation-panel {
+  position: sticky;
+  top: var(--space-lg);
+}
+
+.reservation-panel__eyebrow {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.reservation-summary {
+  display: grid;
+  gap: var(--space-xs);
+  padding: 0;
+  margin: var(--space-lg) 0 0;
+  list-style: none;
+  color: var(--color-text-muted);
+}
+
+.reservation-summary li {
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-secondary-soft);
+}
+
+.reservation-panel__note {
+  margin: var(--space-md) 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 48rem) {
+  .detail-list--two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .detail-list__item--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 63.99rem) {
+  .reservation-panel {
+    position: static;
+  }
+}
+
 /* 13. Formularios
    ========================================================================== */
 
