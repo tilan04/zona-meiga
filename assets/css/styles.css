@@ -1007,5 +1007,71 @@ select:focus-visible {
   }
 }
 
+/* ========================================================================== 
+   18. Detalle
+   ========================================================================== */
+
+.service-detail {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.service-detail__media img {
+  width: 100%;
+  max-height: 34rem;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-detail__content {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.service-detail__calendar {
+  padding: var(--space-lg);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-list {
+  display: grid;
+  gap: var(--space-md);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.detail-list__item {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-md);
+  border: var(--border-soft);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+}
+
+.detail-list__label {
+  color: var(--color-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.detail-list__value {
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 64rem) {
+  .service-detail {
+    grid-template-columns: minmax(0, 1.2fr) minmax(22rem, 0.8fr);
+    align-items: start;
+  }
+}
+
 
 
