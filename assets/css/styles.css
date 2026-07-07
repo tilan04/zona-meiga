@@ -66,36 +66,42 @@ figure {
    ========================================================================== */
 
 :root {
-  /* Colores base */
-  --color-bg: #f5f1e8;
-  --color-surface: #fffaf0;
-  --color-surface-soft: #ebe3d3;
+  /* Colores base: Galicia / bandera / aire limpio */
+  --color-bg: #f7f3ea;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eef5f8;
 
   /* Texto */
-  --color-text: #1f2a24;
-  --color-text-muted: #66736a;
-  --color-text-inverted: #f8f3e8;
+  --color-text: #172632;
+  --color-text-muted: #5e6f78;
+  --color-text-inverted: #ffffff;
 
-  /* Marca */
-  --color-primary: #1f4d3a;
-  --color-primary-dark: #123326;
-  --color-primary-soft: #dbe8df;
+  /* Marca: azul Galicia */
+  --color-primary: #2f79b7;
+  --color-primary-dark: #1e527e;
+  --color-primary-soft: #d9eaf4;
 
-  /* Galicia / agua / cielo */
-  --color-secondary: #2f6f9f;
-  --color-secondary-soft: #d7e7ef;
+  /* Azul claro tipo Nantucket Breeze */
+  --color-secondary: #a9c7df;
+  --color-secondary-soft: #eaf3f8;
 
-  /* Detalles artesanales / místicos */
-  --color-accent: #8a6f3d;
-  --color-accent-soft: #e7dcc0;
+  /* Acento meiga / legendario, usado poco */
+  --color-accent: #7d5a8c;
+  --color-accent-dark: #533660;
+  --color-accent-soft: #efe3f3;
 
-  /* Neutros */
-  --color-stone: #b8b2a7;
-  --color-border: #ddd4c5;
+  /* Neutros cálidos */
+  --color-stone: #d8d0c3;
+  --color-border: #dce6eb;
 
   /* Zonas oscuras */
-  --color-dark: #101c17;
-  --color-dark-soft: #1b3027;
+  --color-dark: #10283a;
+  --color-dark-soft: #183d58;
+
+  /* Estados */
+  --color-success: #2f7d5a;
+  --color-warning: #b8792c;
+  --color-error: #b74444;
 
   /* Tipografía */
   --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -123,8 +129,8 @@ figure {
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
 
-  --shadow-sm: 0 0.25rem 0.75rem rgb(16 28 23 / 8%);
-  --shadow-md: 0 0.75rem 2rem rgb(16 28 23 / 12%);
+  --shadow-sm: 0 0.25rem 0.75rem rgb(16 40 58 / 8%);
+  --shadow-md: 0 0.75rem 2rem rgb(16 40 58 / 12%);
 
   --border-soft: 1px solid var(--color-border);
 
@@ -132,7 +138,6 @@ figure {
   --transition-fast: 160ms ease;
   --transition-base: 220ms ease;
 }
-
 
 /* ========================================================================== 
    3. Base
@@ -326,7 +331,7 @@ select:focus-visible {
 .site-header {
   color: var(--color-text-inverted);
   background-color: var(--color-dark);
-  border-bottom: 1px solid rgb(248 243 232 / 12%);
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
 }
 
 .site-header__inner {
@@ -388,7 +393,7 @@ select:focus-visible {
 
 .nav-list a:hover,
 .nav-list a[aria-current="page"] {
-  color: var(--color-accent-soft);
+  color: var(--color-secondary);
 }
 
 .nav-toggle {
@@ -417,54 +422,45 @@ select:focus-visible {
   position: relative;
   display: grid;
   align-items: center;
-  min-height: 70vh;
+  min-height: 72vh;
   padding-block: var(--space-3xl);
   color: var(--color-text-inverted);
   background:
     linear-gradient(
       90deg,
-      rgb(16 28 23 / 88%) 0%,
-      rgb(16 28 23 / 68%) 45%,
-      rgb(16 28 23 / 35%) 100%
+      rgb(16 40 58 / 88%) 0%,
+      rgb(16 40 58 / 64%) 48%,
+      rgb(16 40 58 / 24%) 100%
     ),
     url("../img/hero.webp") center / cover no-repeat;
-}
-
-.hero--small {
-  min-height: 24rem;
-  padding-block: var(--space-2xl);
 }
 
 .hero__content {
   position: relative;
   z-index: 1;
-  max-width: 45rem;
+  max-width: 46rem;
 }
 
 .hero__eyebrow {
   margin: 0 0 var(--space-sm);
-  color: var(--color-accent-soft);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .hero__title {
   margin: 0;
   color: var(--color-text-inverted);
-  font-size: clamp(3rem, 8vw, 6.5rem);
-}
-
-.hero--small .hero__title {
-  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-size: clamp(3rem, 8vw, 6.25rem);
 }
 
 .hero__text {
   max-width: 38rem;
   margin-top: var(--space-lg);
   margin-bottom: 0;
-  color: rgb(248 243 232 / 86%);
+  color: rgb(255 255 255 / 86%);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
 }
 
@@ -474,7 +470,6 @@ select:focus-visible {
   gap: var(--space-md);
   margin-top: var(--space-xl);
 }
-
 
 /* ========================================================================== 
    9. Secciones
